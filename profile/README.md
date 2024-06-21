@@ -1,4 +1,4 @@
-![ROI - Sales Intelligence](https://github.com/withroi/.github/blob/main/profile/roi-github-v2.png?raw=true)
+![ROI - Sales Intelligence](https://github.com/withroi/.github/blob/main/profile/roi-github-v3.png?raw=true)
 
 ## Welcome to ROI
 
