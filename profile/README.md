@@ -1,4 +1,4 @@
-![ROI - Lead Automation](https://github.com/withroi/.github/blob/main/profile/roi-github-profile.png?raw=true)
+![ROI - Lead Automation](https://github.com/withroi/.github/blob/main/profile/roi-github-profile-v2.png?raw=true)
 
 ## Welcome to ROI
 
