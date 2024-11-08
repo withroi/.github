@@ -19,24 +19,34 @@ categories:
 change-template: "- $TITLE (#$NUMBER) @$AUTHOR"
 no-changes-template: "- No changes"
 template: |
-  ### Release Notes
+  ## Release Notes
 
-  #### New Features
+  ${{#if NEW_FEATURES}}
+  ### New Features
   $NEW_FEATURES
+  ${{/if}}
 
-  #### Changes
+  ${{#if CHANGES}}
+  ### Changes
   $CHANGES
+  ${{/if}}
 
-  #### Bug Fixes
+  ${{#if BUG_FIXES}}
+  ### Bug Fixes
   $BUG_FIXES
+  ${{/if}}
 
-  #### Documentation
+  ${{#if DOCUMENTATION}}
+  ### Documentation
   $DOCUMENTATION
+  ${{/if}}
 
-  #### Tooling
+  ${{#if TOOLING}}
+  ### Tooling
   $TOOLING
+  ${{/if}}
 
-  ***
-
+  ${{#if CONTRIBUTORS}}
   ### Contributors
   $CONTRIBUTORS
+  ${{/if}}
