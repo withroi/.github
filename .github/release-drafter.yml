@@ -16,37 +16,21 @@ categories:
   - title: "Tooling"
     labels:
       - "tooling :wrench:"
-change-template: "- $TITLE (#$NUMBER) @$AUTHOR"
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 no-changes-template: "- No changes"
 template: |
   ## Release Notes
 
-  ${{#if NEW_FEATURES}}
-  ### New Features
-  $NEW_FEATURES
-  ${{/if}}
+  {% if categories %}
+  {% for category in categories %}
+  ### {{ category.title }}
+  {{ category.content }}
+  {% endfor %}
+  {% else %}
+  No changes in this release.
+  {% endif %}
 
-  ${{#if CHANGES}}
-  ### Changes
-  $CHANGES
-  ${{/if}}
-
-  ${{#if BUG_FIXES}}
-  ### Bug Fixes
-  $BUG_FIXES
-  ${{/if}}
-
-  ${{#if DOCUMENTATION}}
-  ### Documentation
-  $DOCUMENTATION
-  ${{/if}}
-
-  ${{#if TOOLING}}
-  ### Tooling
-  $TOOLING
-  ${{/if}}
-
-  ${{#if CONTRIBUTORS}}
-  ### Contributors
-  $CONTRIBUTORS
-  ${{/if}}
+  {% if contributors %}
+  ## Contributors
+  {{ contributors }}
+  {% endif %}
