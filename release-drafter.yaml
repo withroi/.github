@@ -1,0 +1,42 @@
+name-template: "v$NEXT_PATCH_VERSION"
+tag-template: "v$NEXT_PATCH_VERSION"
+categories:
+  - title: "Changes"
+    labels:
+      - "enhancement"
+  - title: "New Features"
+    labels:
+      - "feature :sparkles:"
+  - title: "Bug Fixes"
+    labels:
+      - "bug :bug:"
+  - title: "Documentation"
+    labels:
+      - "documentation :memo:"
+  - title: "Tooling"
+    labels:
+      - "tooling :wrench:"
+change-template: "- $TITLE (#$NUMBER) @$AUTHOR"
+no-changes-template: "- No changes"
+template: |
+  ### Release Notes
+
+  #### New Features
+  $NEW_FEATURES
+
+  #### Changes
+  $CHANGES
+
+  #### Bug Fixes
+  $BUG_FIXES
+
+  #### Documentation
+  $DOCUMENTATION
+
+  #### Tooling
+  $TOOLING
+
+  ***
+
+  ### Contributors
+  $CONTRIBUTORS
